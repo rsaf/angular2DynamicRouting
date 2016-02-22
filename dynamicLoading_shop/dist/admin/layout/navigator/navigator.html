@@ -1,0 +1,59 @@
+            <!-- START LEFT SIDEBAR NAV-->
+            <aside id="left-sidebar-nav">
+                <ul id="slide-out" class="side-nav fixed leftside-navigation ps-container ps-active-y" style="width: 240px;">
+
+                   <!--  <li class="bold" *ngFor="#nav of navigations">
+                        <a [routerLink]="[nav.link]"  class="waves-effect"><i class="{{nav.icon}}"></i> {{nav.title}}</a>
+                    </li> -->
+
+                     <li class="bold" *ngFor="#nav of navigations">
+                        <a [routerLink]="nav.link"  class="waves-effect"><i class="{{nav.icon}}"></i> {{nav.title}}</a>
+                    </li>
+                  
+
+                  <!--   <li class="bold" *ngFor="#route of routes; #i=index">
+                        <a  [routerLink]="route.path"  class="waves-effect" >route {{i}}</a>
+                    </li> -->
+
+
+
+<!--                     <li class="bold"><a href="layout01/app-email.html" class="waves-effect"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
+                    </li> -->
+                    <!-- <li class="li-hover"><p class="ultra-small margin more-text">内容管理</p></li>
+
+                    <li class="bold">
+                        <a [routerLink]="['Promo']" class="waves-effect"><i class="mdi-editor-insert-invitation"></i> 促销信息</a>
+                    </li>
+                    <li class="bold">
+                        <a [routerLink]="['Tenant']" class="waves-effect"><i class="mdi-social-pages"></i> 租户管理</a>
+                    </li>
+
+                    <li class="bold">
+                        <a [routerLink]="['Page']" class="waves-effect"><i class="mdi-image-image"></i> 页面管理</a>
+                    </li>
+                    <li class="li-hover"><div class="divider"></div></li>
+                    <li class="li-hover"><p class="ultra-small margin more-text">人才招募</p></li>
+                    <li class="bold">
+                        <a [routerLink]="['Recruit']" class="waves-effect"><i class="mdi-device-now-widgets"></i> 招聘管理</a>
+                    </li>
+
+                    <li class="bold">
+                        <a [routerLink]="['Resume']" class="waves-effect"><i class="mdi-editor-insert-comment"></i> 简历管理</a>
+                    </li>
+
+                    <li class="li-hover"><div class="divider"></div></li>
+                    <li class="li-hover"><p class="ultra-small margin more-text">用户管理</p></li>
+                    <li class="bold">
+                        <a [routerLink]="['User']" class="waves-effect"><i class="mdi-action-account-circle"></i> 成员管理</a>
+                    </li>
+                    <li class="bold">
+                        <a [routerLink]="['Group']" class="waves-effect"><i class="mdi-image-grid-on"></i> 权限管理</a>
+                    </li>                 -->
+
+                </ul>
+
+
+
+                <a  data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+            </aside>
+            <!-- END LEFT SIDEBAR NAV-->

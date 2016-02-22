@@ -1,0 +1,27 @@
+{
+  "name": "finance",
+  "description": "gineign finance",
+  "main": "gulpfile.js",
+  "authors": [
+    "Gin Takashi Mizuoka <gin@gineign.cn>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.5",
+    "lodash":"latest",
+    "chartist": "^0.9.5",
+    "Chart.js": "^1.0.2",
+    "sparkline": "^2.1.2",
+    "perfect-scrollbar": "^0.6.10",
+    "jvectormap": "^2.0.4"
+  }
+}

@@ -1,0 +1,27 @@
+<div class="row divider"></div>
+
+<div ng-repeat="order in data.orders">
+	<div class="row border">
+		<div class="container-fluid">
+			<span>订单号: {{order.order_sn}}</span>
+		</div>
+	</div>
+	<div class="row border" ng-repeat="(key, product) in order.products" ng-if="key==0">
+		<div class="col-xs-3" >
+			<img ng-src="{{product.image}}" width="100%" class="img-thumbnail">
+		</div>
+		<div class="col-xs-6">
+			<h5>{{product.name}}</h5>
+		</div>
+		<div class="col-xs-3">
+			<span  class="text-danger">¥{{product.price}}</span>
+			<span>×{{product.quantity}}</span>
+		</div>
+	</div>
+	<div class="row border">
+		<div class="container">
+			总价: <span class="text-danger" >¥{{order.total}}</span>
+		</div>
+	</div>
+	<div class="row divider"></div>
+</div>

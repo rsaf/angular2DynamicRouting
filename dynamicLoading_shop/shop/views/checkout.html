@@ -1,0 +1,113 @@
+<a class="row border" data-toggle="modal" data-target="#address">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6">
+				<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 收款人: {{user.nickname}}
+			</div>
+			<div class="col-xs-6 text-right">
+				{{user.phone}}&nbsp&nbsp
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+				<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 收货地址: {{address.fulladdress}}
+			</div>
+		</div>
+	</div>
+</a>
+<div class="row divider"></div>
+
+
+<div class="row border" ng-repeat="item in data.items">
+
+	<div class="col-xs-3">
+		<img ng-src="{{item.image}}" width="100%" class="img-thumbnail">
+	</div>
+	<div class="col-xs-6">
+		{{item.name}}
+	</div>
+	<div class="col-xs-3 text-right">
+		¥{{item.price}} <br>
+		<span>×{{item.quantity}}</span>
+	</div>
+</div>
+
+<div class="row border">
+	<div class="col-xs-7 pull-right text-right">
+		<h5 class="text-danger">合计 : ¥{{data.total}}</h5>
+	</div>
+</div>
+<div class="row divider"></div>
+
+<div class="row border">
+	<div class="col-xs-7 pull-right text-right">
+		<h5 class="text-danger">优惠券</h5>
+	</div>
+</div>
+<div class="row divider"></div>
+
+<div class="row border">
+	<div class="container text-center">
+		<h5 >需付 : ¥{{data.total}} +  ¥{{data.totalShipping}}运费</h5>
+	</div>
+	<div class="container text-center">
+		<h5 class="text-danger">需付 : ¥{{data.total}}</h5>
+	</div>
+</div>
+<div class="row divider"></div>
+
+<div class="row border">
+	<div class="container">
+		<button class="btn btn-success btn-block" ng-click="checkout('wechat')">微信安全支付</button>
+	</div>
+	<br>
+	<div class="container">
+		<button class="btn btn-default btn-block" ng-click="checkout('test')">支付测试</button>
+	</div>
+</div>
+<div class="row divider"></div>
+<!-- Modal -->
+<div class="modal fade" id="address" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-lg" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">请选择您的地址</h4>
+      </div>
+      <div class="modal-body">
+       	<div class="row">
+       		<div class="container">
+	       		<div class="col-xs-4 address">
+		            <select class="form-control"  ng-model="address.province" ng-options="province.region_id as province.region_name for province in provinces" ng-change="provinceSelected(address.province)">
+		                <option value="">省</option>
+		           </select> 
+		        </div>
+
+		        <div class="col-xs-4 address">
+		            <select class="form-control"  ng-model="address.city" ng-options="city.region_id as city.region_name for city in cities" ng-change="citySelected(address.city)" >
+		                <option value="">市</option>
+		           </select>  
+		        </div>
+
+		        <div class="col-xs-4 address">
+		            <select class="form-control"  ng-model="address.district" ng-options="district.region_id as district.region_name for district in districts" >
+		                <option value="">区</option>
+		           </select>  
+		        </div>
+       		</div>
+	 	</div>
+	 	<br>
+	 	<div class="row">
+	 		<div class="container">
+	 			<input type="text" class="form-control"  placeholder="地址" ng-model="address.address">
+	 		</div>
+	 	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-block" ng-click="addressConfirm(address)" data-dismiss="modal" aria-label="Close" disabled ng-if="!address.address">确认</button>
+        <button type="button" class="btn btn-primary btn-block" ng-click="addressConfirm(address)" data-dismiss="modal" aria-label="Close" ng-if="address.address">确认</button>
+      </div>
+    </div>
+  </div>
+</div>

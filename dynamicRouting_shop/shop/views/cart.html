@@ -1,0 +1,40 @@
+<div class="row border">
+	<div class="col-xs-7">
+		<h5>
+			<span class="glyphicon glyphicon-shopping-cart pull-left" aria-hidden="true"></span>
+			<strong> &nbsp&nbsp购物车</strong>
+		</h5>
+	</div>
+	<div class="col-xs-5 pull-right" ng-if="data.total!=0">
+		<button class="btn btn-success btn-block " ui-sref="checkout" >结算</button>
+	</div>
+</div>
+<div class="row divider"></div>
+<div class="row border" ng-repeat="item in data.items">
+
+	<div class="col-xs-3">
+		<img ng-src="{{item.image}}" width="100%" class="img-thumbnail">
+	</div>
+	<div class="col-xs-6">
+		{{item.name}}
+	</div>
+	<div class="col-xs-3 text-right">
+		¥{{item.price}} <br>
+		<span>×{{item.quantity}}</span>
+	</div>
+</div>
+<div class="row border" ng-if="data.items.length == 0">
+	<div class="container">
+		<span>购物车里面没有商品</span>
+	</div>
+</div>
+<div class="row divider"></div>
+<div class="row border">
+
+	<div class="col-xs-5 pull-right" ng-if="data.total!=0">
+		<button class="btn btn-success btn-block " ui-sref="checkout" ng-if="data.total!=0"	>结算</button>
+	</div>
+	<div class="col-xs-7 text-right  pull-right">
+		<h5 class="text-danger">合计 : {{data.total}}元</h5>
+	</div>
+</div>
