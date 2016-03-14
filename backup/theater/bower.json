@@ -1,0 +1,30 @@
+{
+  "name": "pocari",
+  "description": "Pocari",
+  "main": "index.js",
+  "authors": [
+    "pan <pan@gineign.cn>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "normalize-css": "~3.0.3",
+    "pixi.js": "~3.0.8",
+    "gsap": "~1.18.0",
+    "SoundJS": "~0.6.1",
+    "domready": "~1.0.8",
+    "socket.io-client":"latest",
+    "velocity": "~1.2.3"
+
+  }
+}

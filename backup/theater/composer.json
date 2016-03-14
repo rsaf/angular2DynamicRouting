@@ -1,0 +1,22 @@
+{
+    "name": "gineign/theater",
+    "description":"gineign theater",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gin Takashi Mizuoka",
+            "email": "gin@gineign.cn"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/console": "~5.0",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gineign\\Theater\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}

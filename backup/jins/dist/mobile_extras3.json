@@ -1,0 +1,92 @@
+{"frames": {
+
+"BalloonGuide.png":
+{
+	"frame": {"x":2,"y":2,"w":785,"h":740},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":785,"h":740},
+	"sourceSize": {"w":785,"h":740}
+},
+"CustomWishBg.png":
+{
+	"frame": {"x":789,"y":718,"w":592,"h":266},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":592,"h":266},
+	"sourceSize": {"w":592,"h":266}
+},
+"Explosion1.png":
+{
+	"frame": {"x":1823,"y":1001,"w":256,"h":219},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":228,"y":256,"w":256,"h":219},
+	"sourceSize": {"w":714,"h":731}
+},
+"Explosion2.png":
+{
+	"frame": {"x":2,"y":744,"w":336,"h":287},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":188,"y":222,"w":336,"h":287},
+	"sourceSize": {"w":714,"h":731}
+},
+"Explosion3.png":
+{
+	"frame": {"x":1522,"y":590,"w":478,"h":409},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":161,"w":478,"h":409},
+	"sourceSize": {"w":714,"h":731}
+},
+"Explosion4.png":
+{
+	"frame": {"x":1522,"y":2,"w":586,"h":501},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":115,"w":586,"h":501},
+	"sourceSize": {"w":714,"h":731}
+},
+"Explosion5.png":
+{
+	"frame": {"x":789,"y":2,"w":714,"h":731},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":714,"h":731},
+	"sourceSize": {"w":714,"h":731}
+},
+"MusicOff.png":
+{
+	"frame": {"x":1383,"y":718,"w":100,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":100},
+	"sourceSize": {"w":100,"h":100}
+},
+"SellectCustomBalloon.png":
+{
+	"frame": {"x":1383,"y":820,"w":230,"h":48},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":230,"h":48},
+	"sourceSize": {"w":230,"h":48}
+},
+"WannaPlay.png":
+{
+	"frame": {"x":1433,"y":1001,"w":388,"h":203},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":388,"h":203},
+	"sourceSize": {"w":388,"h":219}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "mobile_extras3.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e655af752259e65853f7dded4a9022f2:1/1$"
+}
+}

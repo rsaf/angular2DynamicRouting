@@ -1,0 +1,52 @@
+{"frames": {
+
+"PhoneInputText.png":
+{
+	"frame": {"x":865,"y":2,"w":726,"h":100},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":38,"w":726,"h":100},
+	"sourceSize": {"w":750,"h":180}
+},
+"RuleCopy.png":
+{
+	"frame": {"x":2,"y":2,"w":642,"h":861},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":29,"w":642,"h":861},
+	"sourceSize": {"w":726,"h":909}
+},
+"ShareCopy.png":
+{
+	"frame": {"x":2,"y":646,"w":598,"h":838},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":598,"h":838},
+	"sourceSize": {"w":598,"h":838}
+},
+"Submit.png":
+{
+	"frame": {"x":842,"y":730,"w":347,"h":166},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":166},
+	"sourceSize": {"w":349,"h":168}
+},
+"Thanks.png":
+{
+	"frame": {"x":2,"y":1246,"w":581,"h":394},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":0,"w":581,"h":394},
+	"sourceSize": {"w":589,"h":394}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "mobile_extras2.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7d1211de3a11efb470e9f7be0c16c20f:1/1$"
+}
+}
